@@ -1,0 +1,36 @@
+
+### cliente (realizar pedido)
+POST http://localhost:3000/restaurant/realizarPedido/
+Content-Type: application/json
+
+{
+    "plato": "false",
+}
+
+### cliente (verificar pedido restaurante)
+GET http://localhost:3000/restaurant/verificarPedido
+
+
+### cliente (verificar pedido delivery)
+GET http://localhost:3001/delivery/verificarPedido
+
+----------------------------------------------------------------
+
+### Restaurante (enviar pedido)
+POST http://localhost:3001/delivery/enviarPedido/
+Content-Type: application/json
+
+{
+    "plato": "false",
+}
+
+### restaurante (restaurante)
+GET http://localhost:3000/restaurant/pedidoEnviado
+
+
+----------------------------------------------------------------
+
+
+### delivery (restaurante)
+GET http://localhost:3001/delivery/pedidoEntregado
+
