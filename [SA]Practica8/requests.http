@@ -1,0 +1,2 @@
+### ping servicio
+GET http://localhost:80/
